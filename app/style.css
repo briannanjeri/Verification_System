@@ -1,0 +1,41 @@
+.signIn{
+    text-align: center;
+    width: 50%;
+    background: grey;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
+    padding: 20px;
+}
+.title{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.signIn button{
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+}
+
+.dashboard{
+    text-align: center;
+    width: 50%;
+    background: grey;
+    margin: auto;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0, 0.2);
+    padding: 20px;
+}
+.title{
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.dashboard button{
+  border: 1px solid #ccc;
+  padding: 5px 10px;
+  border-radius: 4px;
+
+}
