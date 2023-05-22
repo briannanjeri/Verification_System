@@ -4,7 +4,7 @@ import { getAuth } from "firebase/auth";
 import { useAuthState } from "react-firebase-hooks/auth";
 import { initFirebase } from "../firebase/firebaseApp";
 import Link from "next/link";
-export default function(){
+export default function Dashboard(){
    const app=initFirebase()
     const auth=getAuth(app);
     const [user, loading]=useAuthState(auth)
