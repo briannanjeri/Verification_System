@@ -5,7 +5,7 @@ import {useAuthState} from "react-firebase-hooks/auth"
 import { initFirebase } from "./firebase/firebaseApp";
 import "./globals.css"
 
-export default function(){
+export default function Home(){
     const app=initFirebase();
     console.log(app)
     const router=useRouter();
@@ -39,7 +39,7 @@ export default function(){
     return(
         <div className="signIn">
             <div className="title">Access granted upon sign-in</div>
-            <button onClick={signIn}>sign In</button>
+            <button onClick={signIn}>sign In With Google</button>
         </div>
      
     )
