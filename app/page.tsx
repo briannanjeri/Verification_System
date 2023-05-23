@@ -2,20 +2,15 @@
 import { getAuth, signInWithPopup, GoogleAuthProvider } from "firebase/auth";
 import { useRouter } from 'next/navigation';
 import {useAuthState} from "react-firebase-hooks/auth"
-import { initFirebase } from "./firebase/firebaseApp";
+import {app } from "./firebase/firebaseApp"
 import "./globals.css"
 
-export default function Home(){
-    const app=initFirebase();
-    console.log(app)
+export default function(){
     const router=useRouter();
-
-
     const provider= new GoogleAuthProvider();
-    const auth=getAuth()
-    const [user, loading]=useAuthState(auth)
+    const auth=getAuth(app)
+    const [loading]=useAuthState(auth)
 
-    console.log("user:",user)
     console.log(loading)
 
     if(loading){
